@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application light theme. -->
+    <style name="pingia_ui_Base.App.Theme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/black</item>
+        <item name="android:actionMenuTextColor">@android:color/black</item>
+        <item name="android:actionMenuTextAppearance">@style/pingia_ui_style_toolbar_actionMenu_text</item>
+        <item name="actionMenuTextAppearance">@style/pingia_ui_style_toolbar_actionMenu_text</item>
+        <item name="actionButtonStyle">@style/pingia_ui_style_myToolbarActionButtonStyle</item>
+        <item name="android:actionButtonStyle">@style/pingia_ui_style_myToolbarActionButtonStyle</item>
+        <item name="toolbarNavigationButtonStyle">@style/pingia_ui_style_myToolbarNavigationButtonStyle</item>
+        <item name="toolbarStyle">@style/pingia_ui_style_customToolbar</item>
+        <item name="actionBarSize">@dimen/toolBarHeight</item>
+        <item name="actionOverflowMenuStyle">@style/pingia_ui_style_OverflowMenuStyle</item>
+        <item name="actionBarItemBackground">@null</item>
+        <item name="android:actionBarItemBackground">@null</item>
+        <item name="textAllCaps">false</item>  <!--防止地区设置为英语后，setText设置的小写字母文字变为大写-->
+    </style>
+
+    <!-- toolbar以及相关的menu样式 start **********************-->
+    <style name="pingia_ui_style_customToolbar" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">@dimen/page_padding</item>
+        <item name="contentInsetEnd">@dimen/page_padding</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/pingia_ui_style_OverflowMenuStyle</item>
+        <item name="buttonGravity"></item>
+        <item name="android:paddingTop">@dimen/toolBarPaddingTop</item>
+    </style>
+
+    <style name="pingia_ui_style_OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <!-- 是否覆盖锚点，默认为true，即盖住Toolbar -->
+        <item name="overlapAnchor">false</item>
+        <!-- 弹出层背景颜色 -->
+        <item name="android:popupBackground">@android:color/white</item>
+        <!-- 弹出层垂直方向上的偏移，即在竖直方向上距离Toolbar的距离，值为负则会盖住Toolbar -->
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <!-- 弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙 -->
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:dropDownListViewStyle">@style/pingia_ui_style_PopupMenuListView</item>
+        <item name="android:actionMenuTextColor">@android:color/black</item>
+    </style>
+
+    <!-- PopuMenu ListView Styles -->
+    <style name="pingia_ui_style_PopupMenuListView" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+
+    <style name="pingia_ui_style_toolbar_actionMenu_text">
+        <item name="android:textSize">@dimen/text_size_30</item>
+    </style>
+
+    <style name="pingia_ui_style_myToolbarNavigationButtonStyle">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <style name="pingia_ui_style_myToolbarActionButtonStyle" parent="@style/Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">1dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+
+    <!--toolbar相关样式结束 end********************* -->
+
+    <style name="pingia_ui_style_common_listview">
+        <item name="android:listSelector">@android:color/transparent</item>
+        <!--<item name="android:divider">@color/divider_gray_color</item>-->
+        <!--<item name="android:dividerHeight">1px</item>-->
+        <item name="android:overScrollMode">never</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:scrollingCache">false</item>
+        <item name="android:cacheColorHint">#00000000</item>
+    </style>
+
+
+</resources>

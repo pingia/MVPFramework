@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="click_load_next">Click to load the next page</string>
+    <string name="cancel">Cancel</string>
+    <string name="click_pullup_loadmore">Click or pull up to load more</string>
+    <string name="completed">Completed</string>
+    <string name="confirm">Confirm</string>
+    <string name="load_all_done">All data has been loaded</string>
+    <string name="load_fail">Loading failed, click to reload</string>
+    <string name="loading">Loading...</string>
+    <string name="no_record">No data</string>
+</resources>

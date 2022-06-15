@@ -1,0 +1,3 @@
+include ':UIFrameworkLib'
+include ':app'
+rootProject.name = "MVPFramework"

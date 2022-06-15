@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:orientation="vertical">
+  <View
+      android:id="@+id/divider_view"
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:background="@android:drawable/divider_horizontal_dark"/>
+
+  <LinearLayout
+      android:id="@+id/loadMore_loading_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_marginEnd="5dp"/>
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/loading"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_26"/>
+  </LinearLayout>
+
+  <FrameLayout
+      android:id="@+id/loadMore_load_failed_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone">
+
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/load_fail"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_26"/>
+
+  </FrameLayout>
+  <FrameLayout
+      android:id="@+id/loadMore_load_nextpage_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone">
+
+    <TextView
+        android:id="@+id/loadMore_load_nextpage_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/click_load_next"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_26"/>
+  </FrameLayout>
+  <FrameLayout
+      android:id="@+id/loadMore_load_ended_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/load_all_done"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_26"/>
+  </FrameLayout>
+</LinearLayout>

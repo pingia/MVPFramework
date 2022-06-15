@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+    <dimen name="icon_padding">@dimen/dp5</dimen>
+    <dimen name="page_padding">@dimen/dp15</dimen>
+
+    <dimen name="toolBarPaddingTop">25dp</dimen>    <!-- 是状态栏（电量栏）的高度，为了适配状态栏透明化而必须设置的一个高度-->
+    <dimen name="toolBarHeight">45dp</dimen>        <!-- toolBar的高度，为了适配状态栏透明化，toolBar的高度必须是电量栏高度 + 实际的toolbar内容高度45dp = 70dp-->
+</resources>
