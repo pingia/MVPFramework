@@ -10,4 +10,7 @@
     <string name="no_record">没有数据</string>
     <string name="confirm">确定</string>
     <string name="cancel">取消</string>
+
+    <string name="do_biz_suc">%sSuccess</string>
+    <string name="do_biz_fail">%sFailure, reason :%s</string>
 </resources>

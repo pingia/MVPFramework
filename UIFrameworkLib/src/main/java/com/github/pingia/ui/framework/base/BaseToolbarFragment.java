@@ -193,6 +193,12 @@ public abstract class BaseToolbarFragment extends Fragment implements ToolbarInt
         }
     }
 
+    public void showToolBar(){
+        if (null != mToolbar) {
+            mToolbar.setVisibility(View.VISIBLE);
+        }
+    }
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater menuInflater) {
         menu = mToolbar.getMenu();

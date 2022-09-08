@@ -9,4 +9,7 @@
     <string name="load_fail">Loading failed, click to reload</string>
     <string name="loading">Loading...</string>
     <string name="no_record">No data</string>
+
+    <string name="do_biz_suc">%sSuccess</string>
+    <string name="do_biz_fail">%sFailure, reason :%s</string>
 </resources>

@@ -69,8 +69,6 @@ public abstract class BaseToolBarActivity extends BaseActivity implements Toolba
 
         setContentView(getLayoutId());
         unbinder = ButterKnife.bind(this);
-        onActivityInit(savedInstanceState);
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             View decorView =this. getWindow().getDecorView();
@@ -83,6 +81,7 @@ public abstract class BaseToolBarActivity extends BaseActivity implements Toolba
             localLayoutParams.flags = (WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | localLayoutParams.flags);
         }
 
+        onActivityInit(savedInstanceState);
     }
 
 
