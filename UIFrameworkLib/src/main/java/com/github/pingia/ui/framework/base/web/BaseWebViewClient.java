@@ -3,6 +3,7 @@ package com.github.pingia.ui.framework.base.web;
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
 import android.net.http.SslError;
+import android.util.Log;
 import android.text.TextUtils;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebResourceResponse;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 
 @SuppressLint("NewApi")
 public class BaseWebViewClient extends WebViewClient {
+	private static final String TAG = "BaseWebViewClient";
+
 	private String[] mWhites;
 	private TextView mTitleView;
 	public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
@@ -24,7 +27,8 @@ public class BaseWebViewClient extends WebViewClient {
 	
 	@Override
 	public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-		handler.proceed();
+		super.onReceivedSslError(view, handler, error);
+		Log.e(TAG, "WebView ssl error detail : " + error.toString());
 	}
 	
 	@Override
